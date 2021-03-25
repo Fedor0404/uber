@@ -1,0 +1,525 @@
+// html,body
+//  overflow-x: hidden
+
+  
+header
+  position: relative
+  height: 50px
+
+nav
+  position: fixed
+  height: 50px
+  width: 100%
+  background: #212121
+  z-index: 2
+
+.menu
+  display: flex
+  justify-content: space-between
+  padding: 13px 70px
+  margin: 0
+  list-style-type: none
+
+  &_link
+    font-weight: 300
+    font-size: 15px
+    color: #FFFFFF
+
+  &_item
+    border-right: 2px dotted black
+    padding-right: 28px
+    &:last-child
+        border-right: none
+
+
+.humburger
+  display: none
+
+.subheader
+  position: absolute
+  top: 50px
+  width: 100%
+  height: 84px
+  background: rgba(0, 0, 0, 0.6)
+
+  &_logo
+    display: block
+    min-width: 100%
+    margin-top: 16px
+
+  &_official
+    margin-top: 6px
+    font-weight: 200
+    font-size: 13px
+    color: #FFFFFF
+    opacity: 0.5
+
+  &_call
+    font-weight: 300
+    font-size: 12px
+    line-height: 14px
+    text-align: right
+    color: #FFFFFF
+    margin-top: 27px
+
+  &_tel
+    display: block
+    margin-top: 8px
+    font-weight: 400
+    font-size: 22px
+    line-height: 12px
+    text-align: right
+    text-transform: uppercase
+    color: #FFFFFF
+
+  &_btn
+    margin-top: 20px
+    width: 172px
+    height: 46px
+    background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    font-weight: 600
+    font-size: 14px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+
+
+.promo
+  min-height: 800px
+  background: url('../img/bg/uber_bg.png') center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+
+  &_header
+    margin: 0
+    font-weight: 900
+    font-size: 60px
+    text-align: center
+    line-height: 60px
+    text-transform: uppercase
+    color: #FFFFFF
+
+  &_subheader
+    margin-top: 22px
+    line-height: 30px
+    font-weight: 600
+    font-size: 36px
+    line-height: 38px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    margin: 0
+
+  &_descr
+    margin-top: 23px
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #FFFFFF
+
+  &_btn
+    display: block
+    margin: 118px auto 0 auto
+    width: 259px
+    height: 63px
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+    border: none
+    border-radius: 4px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
+
+.lable
+  margin: 0 auto
+  height: 24px
+  width: 112px
+  padding: 5px 12px
+  background-color: #000000
+  color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
+  text-align: center
+  &_white
+    margin: 0 auto
+    height: 24px
+    width: 112px
+    padding: 5px 12px
+    background-color: #ffffff
+    color: #000
+    font-size: 11px
+    font-weight: 300
+    text-transform: uppercase
+    text-align: center
+
+
+.titel
+    margin-top: 33px
+    font-style: normal
+    font-weight: bold
+    font-size: 38px
+    text-align: center
+    text-transform: uppercase
+    color: #222222
+    margin-bottom: 18px
+    &_white
+      margin-top: 33px
+      font-style: normal
+      font-weight: bold
+      font-size: 38px
+      text-align: center
+      text-transform: uppercase
+      color: #ffffff  
+      margin-bottom: 18px
+
+
+.subtitel 
+    margin-top: 19px
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    text-align: center
+    color: #222222
+    &_white
+      margin-top: 19px
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      text-align: center
+      color: #ffffff 
+
+
+.reason
+  padding: 71px 0 61px 0
+
+  &_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
+
+  &_descr
+    width: 343px
+
+  &_subheador
+    line-height: 21px
+    color: #1eacc7
+    font-size: 17px
+    font-weight: 400
+
+  &_text
+    color: #202020
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+
+// это сделал я 
+
+/* .reason .col-md-2 {
+ *    display: flex;
+ *    justify-content: center;
+ *    align-items: center;
+ *    margin-top: 34px;
+ *    
+ *}
+ *
+ *.benefit .col-md-4 {
+ *    margin-top: 26px;
+ *}
+ *
+ *
+ *.benefit .benefit_round{
+ *    display: flex;
+ *    justify-content: center;
+ *    align-items: center;
+ *    margin: 0 auto;
+ *    width: 116px;
+ *    height: 116px;
+ *    background: #1EACC7;
+ *    border-radius: 100%;
+ *
+ *}
+ *
+ *.benefit .benefit_subheader {
+ *    font-style: normal;
+ *    font-weight: 400;
+ *    font-size: 17px;
+ *    line-height: 21px;
+ *    color: #1EACC7;
+ *}
+ *
+ *.benefit .benefit_descr {
+ *    margin-top: 5px;
+ *    font-weight: 300;
+ *    font-size: 15px;
+ *    line-height: 21px;
+ *    color: #202020;
+ *}
+
+
+.mobile
+  min-height: 864px 
+  padding: 48px 0 79px 0
+  background: url('../img/bg/mobile_bg.png') center (center / cover) no-repeat
+  .row
+    margin-top: 32px  
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    &_1
+      background: url('../img/mob_app/mobile_item_img_1.png') center (center / cover) no-repeat
+    &_2
+      background: url('../img/mob_app/mobile_item_img_2.png') center (center / cover) no-repeat
+    &_3
+      background: url('../img/mob_app/mobile_item_img_3.png') center (center / cover) no-repeat
+    &_4
+      background: url('../img/mob_app/mobile_item_img_4.png') center (center / cover) no-repeat
+    &_5
+      background: url('../img/mob_app/mobile_item_img_5.png') center (center / cover) no-repeat
+    &_6
+      background: url('../img/mob_app/mobile_item_img_6.png') center (center / cover) no-repeat
+    &_subtitel
+      font-size: 24px
+      line-height: 31px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      left: 50%
+      transform: translateX(-50%)
+      width: 26px
+      height: 26px
+      background: #000000
+      margin: 0 auto
+      border-radius: 100%
+      cursor: pointer
+      &::before
+        content: ''
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $main_color
+        transition: 0.5s all
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        width: 2px
+        height: 14px
+        background-color: $main_color
+        transition: 0.5s all
+
+      &:hover
+        &:before, &:after
+          background-color: $second_color
+          
+      
+// этот блок у меня сделан  не так как ун него
+
+.choice  
+  min-height: 864px
+  padding: 50px 0 137px 0
+  background: url('../img/bg/bg_choice.png') center (center / cover) no-repeat
+  &_car
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 54px
+    img
+      width: 100%
+  &_descr
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    text-align: center
+    color: #222222
+
+.conditions
+  // min-height: 917px
+  padding: 68px 0 84px 0
+  &_block
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_titel
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    color: #1CA8C3;
+  &_list
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 22px
+    li
+      // display: inline-block
+      position: relative
+      font-weight: 300;
+      font-size: 17px;
+      color: #222222;
+      margin-bottom: 10px
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        // transform: translateY(-50%)
+        // vertical-align: middle
+        // transform: translate(-5px , -2px)
+        width: 21px
+        height: 20px
+        background: url('../img/elements/check_blue.png') center (center / cover) no-repeat
+  &_descr
+    margin-top: 25px
+    font-weight: 300;
+    font-size: 17px;
+    color: #1CA8C3;
+  .warning
+    .conditions_titel
+      color: $second_color
+    .conditions_list
+      li
+        &::before
+          background: url('../img/elements/check_red.png') center (center / cover) no-repeat
+
+.worldwide
+  min-height: 716px
+  padding: 48px 0
+  background: url(../img/bg/worldwide.png) center (center / cover) no-repeat
+  &_allcity
+    display: block
+    text-align: center
+    margin-top: 456px
+    font-size: 15px
+    text-transform: uppercase
+    color: #1FBAD6
+    transition: 0.5s all
+    &:hover
+      color: $second_color
+      text-decoration: none
+
+
+footer
+  padding: 14px 23px 39px 23px
+  a
+    &:hover
+      text-decoration: none 
+      color: $second_color
+      transition: 0.5s all
+
+.footer
+  &_divider
+    width: 301px
+    height: 4px
+    background-color: $main_color
+    margin: 0 auto
+  
+  &_wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 32px
+
+  &_wrapper > div 
+    width: 33%
+    &:nth-child(3)
+      display: flex
+      justify-content: flex-end
+
+  &_social
+    display: flex
+    justify-content: space-between
+    width: 160px
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    border-radius: 100%
+    background-color: #070716
+    i
+      color: #fff 
+      display: flex
+      justify-content: center
+      align-items: center
+    span
+      color: #fff 
+      display: flex
+      justify-content: center
+      align-items: center
+
+      
+
+
+
+  &_link
+    width: 360px
+    margin: 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #070716;
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 68px;
+        text-transform: uppercase;
+        color: #999999;
+    &_language
+      display: block
+      margin: 0 auto
+      font-size: 11px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #1FBAD6;
+  &_appstore
+    // max-width: 296px
+    // max-height: 25px
+    // display: flex
+    // justify-content: space-between
+
+.xs-visible 
+    display: none

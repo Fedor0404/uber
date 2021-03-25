@@ -1,0 +1,266 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header {
+    position: relative;
+    height: 50px;
+}
+
+
+nav {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: #212121;
+    z-index: 2;    
+}
+
+
+
+
+.menu {
+    display: flex;
+    justify-content:space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+
+}
+
+.menu .menu_link {
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+
+.subheader {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 84px;
+    background: rgba(0, 0, 0, 0.6);
+ 
+}
+
+.subheader .subheader_logo {
+    display: block;
+    min-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;    
+    font-weight: 200;
+    font-size: 13px;   
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.subheader .subheader_call {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 27px;
+}
+
+.subheader .subheader_tel {
+    display: block;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.subheader .subheader_btn {
+    margin-top: 20px;
+    width: 172px;
+    height: 46px;
+    background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+    min-height: 800px;
+    background: url('../img/bg/uber_bg.png') center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+
+.promo .promo_header {
+    margin: 0;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    
+}
+
+.promo .promo_subheader {
+    margin-top: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+
+}
+
+.promo .promo_descr {
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promo .promo_btn {
+    display: block;
+    margin: 118px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.reason {
+    padding: 71px 0 61px 0;
+}
+
+.reason .reason_btn {
+    margin: 0 auto;
+    height: 24px;
+    width: 112px;
+    padding: 5px 12px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.reason .reason_titel {
+    margin-top: 33px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 18px;
+    
+}
+
+.reason .reason_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reason .reason_block .reason_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reason .reason_block .reason_descr {
+    width: 343px;
+}
+
+.reason .reason_block .reason_descr .reason_subheador{
+    line-height: 21px;
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.reason .reason_block .reason_descr .reason_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+} 
+
+/* .reason .col-md-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    
+}
+
+.benefit .col-md-4 {
+    margin-top: 26px;
+}
+
+
+.benefit .benefit_round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+
+}
+
+.benefit .benefit_subheader {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
+
+.benefit .benefit_descr {
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+} */
+
+
+
+
